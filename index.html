@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
     <title>Vacation Rentals & Unique Homes</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -45,6 +45,7 @@
                 type="location"
                 name="location-search"
                 placeholder="Search destination"
+                size = "1"
                 required
               />
             </div>
@@ -52,7 +53,8 @@
             <!--Arrival date input here -->
             <div>
               <label for="arrival"><b>Arrive </b> </label>
-              <input id="arrival" type="date" name="arrival-date" required />
+              <input id="arrival" type="date" name="arrival-date"
+              size = "1" required />
             </div>
 
             <!--Departure date input here -->
@@ -62,13 +64,14 @@
                 id="departure"
                 type="date"
                 name="departure-date"
+                size = "1"
                 required
               />
             </div>
             <!--Type of stay drop menu here -->
             <div>
               <label for="stay-type"><b>Type </b> </label>
-              <select id="stay-type">
+              <select id="stay-type" size = "1">
                 <option value="">Apartment</option>
                 <option value="">Barn</option>
                 <option value="">Castle</option>

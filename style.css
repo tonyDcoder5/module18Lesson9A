@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  width: auto;
 }
 
 h2 {
@@ -36,7 +37,7 @@ main img {
   width: 100px;
 }
 
-#ideas div img{
+#ideas div img {
   margin: 0;
 }
 
@@ -81,18 +82,25 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 5em;
+  font-size: 15vw;
+  text-align: center;
   color: #fff;
+}
+
+header nav{
+  width: auto;
 }
 
 header nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-style: bold;
 }
 
 header nav ul li {
-  font-size: 1.25em;
+  align-self: center;
+  font-size: 3vmin;
   list-style-type: none;
 }
 
@@ -114,7 +122,7 @@ form {
   flex-direction: column;
   border: 3px solid #ff385c;
   padding: 10px;
-  width: auto;
+  width: 100%;
 }
 
 form label {
@@ -158,14 +166,17 @@ footer p {
   header {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-  }
-  header nav {
-    margin: 0px 20px 20px 0px;
+    width: auto;
   }
   .logo {
-    font-size: 3em;
+    align-self:flex-start;
+    font-size: 8vmin;
+    
   }
+  header nav {
+    margin: 0px 0px 0px 0px;
+  }
+
   form {
     flex-direction: row;
     width: 100%;
@@ -186,9 +197,10 @@ footer p {
     justify-content: space-between;
   }
 
-  .item{
+  .item {
     width: 50%;
   }
+  
   #about .item {
     align-self: center;
     width: 25%;
@@ -198,7 +210,7 @@ footer p {
     justify-self: center;
     align-self: center;
     width: 1;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   #ideas div {
@@ -207,21 +219,20 @@ footer p {
     justify-content: space-between;
   }
 
-  #ideas div div{
+  #ideas div div {
     display: flex;
     flex-direction: column;
     margin: 0px 10px;
   }
 
-  #ideas div div .item{
+  #ideas div div .item {
     width: 100%;
     max-width: 1200px;
   }
 
-  #host div{
+  #host div {
     justify-self: center;
     align-self: center;
-    font-size: .85em;
+    font-size: 0.85em;
   }
-
 }
