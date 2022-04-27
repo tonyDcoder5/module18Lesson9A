@@ -93,6 +93,7 @@ header nav{
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-style: bold;
@@ -100,7 +101,7 @@ header nav ul {
 
 header nav ul li {
   align-self: center;
-  font-size: 3vmin;
+  font-size: 4vmin;
   list-style-type: none;
 }
 
@@ -134,8 +135,10 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  min-width: 50px;
 }
 form div {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -158,6 +161,10 @@ footer p {
   color: #fff;
   text-align: center;
   padding: 20px;
+}
+
+#host div{
+  font-size: 4vmin;
 }
 
 /* -------  Media Query ------- */
@@ -233,6 +240,6 @@ footer p {
   #host div {
     justify-self: center;
     align-self: center;
-    font-size: 0.85em;
+    font-size: 2vmin;
   }
 }
